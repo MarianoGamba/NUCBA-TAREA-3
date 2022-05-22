@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:ital,wght@0,300;0,500;1,300;1,500&display=swap");
+
+:root{
+  --red-bg: #a52a2a;
+  --red-bghover:#741818;
+  --salmon-bg:#fa8072;
+  --font-1: "Roboto", sans-serif;
+  --font-2:"Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.logo{
+    height: 100%;
+}
+
+header{
+    background-color: black;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 0 10px rgb(0 0 6);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding-right: 15px;
+}
+
+.nav__list{
+    display: flex;
+    gap: 80px;
+    height: auto;
+    width: auto;
+    list-style: none;
+}
+
+.nav__link{
+    color: var(--red-bg);
+}
+
+.nav__link:hover{
+    text-decoration: underline;
+    color: var(--salmon-bg)
+    
+}
+
+.hero__img{
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.gift{
+    border-radius: 10px;
+}
+  
+section{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 5rem;
+}
+
+.text__btns{
+    margin-top: 1.3rem;
+    display: flex;
+    gap: 10px;
+}
+
+.hero__text{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.hero__text h2{
+    font-weight: 450px;
+    font-size: 2rem;
+}
+
+.hero__text p{
+    max-width: 450px;
+
+}
+
+.btn{
+    border: 2px solid ;
+    padding: 1rem 1.3rem;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.hero__btns1{
+    color: black;
+    background-color: var(--red-bghover)
+}
+
+.hero__btns2{
+    color: black; 
+    background-color: var(--red-bghover)
+}
+
+@media (max-width:400px){
+
+    .nav__list{
+        gap: 25px;
+        padding-right: 10px;
+    }
+
+    section{
+        flex-direction: column;
+        height: 100vh;
+        padding: 20px 20px;
+        margin-top: 100px;
+        width: 100%;
+    }
+
+    .hero__text{
+        align-items: center;
+    }
+    .hero__text h2 {
+        max-width: 400px;
+        text-align: center;
+    }
+    .hero__text p {
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .hero__img{
+        display: flex;
+        background-color: #fa8072;
+        width: 35%;
+        height: 35%;
+        /* padding-left: 35px; */
+        border-radius: 10px;
+        align-content: center;
+        justify-content: center;
+        
+     
+    }
+    
+   
+}
